@@ -40,6 +40,7 @@ booleano que representa "verdadeiro";
 pessoa.andar = function(metros){
 pessoa.caminhouQuantosMetros = pessoa.caminhouQuantosMetros + metros;
 pessoa.andando = true;
+}
 
 /*
 Adicione um método ao objeto `pessoa` chamado `parar`, que irá modificar o valor
@@ -77,7 +78,7 @@ return 'Eu peso ' + pessoa.peso + 'KG';
 Crie um método chamado `mostrarAltura` que retorne a frase:
 - "Minha altura é [ALTURA]m."
 */
-pessoa.mostraAltura = function(){
+pessoa.mostrarAltura = function(){
 return 'Minha altura é ' + pessoa.altura + 'm';
 }
 
