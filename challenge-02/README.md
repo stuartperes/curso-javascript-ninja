@@ -41,7 +41,7 @@ Crie uma função com as seguintes características:
 3. O retorno da função deve ser a multiplicação dos 3 argumentos, somando `2` ao resultado da multiplicação.
 */
 function multiplicacao(num1, num2, num3){
-if(num1 == undefined || num2 == undefined || num3 == undefined){
+if(num1 === undefined || num2 === undefined || num3 === undefined){
   return 'Preencha todos os valores corretamente';
   }
 return (num1 * num2 * num3) + 2
@@ -68,22 +68,22 @@ Crie uma função com as seguintes características:
 6. E ainda, se nenhuma das condições acima forem atendidas, retorne `null`.
 */
 function  retorno(num1, num2, num3){
-  if(num1 != undefined && num2 != undefined && num3 != undefined){
+  if(num1 !== undefined && num2 !== undefined && num3 !== undefined){
     return (num1 + num2) / num3;
-  } else if ((num1 != undefined && num2 != undefined) || (num1 != undefined && num3 != undefined) || (num2 != undefined && num3 != undefined)){
-    if(num1 != undefined && num2 != undefined){
+  } else if ((num1 !== undefined && num2 !== undefined) || (num1 !== undefined && num3 !== undefined) || (num2 !== undefined && num3 !== undefined)){
+    if(num1 !== undefined && num2 !== undefined){
       return num1 + num2;
-    } else if(num1 != undefined && num3 != undefined){
+    } else if(num1 !== undefined && num3 !== undefined){
       return num1 + num3;
     } else {
       return num2 + num3;
     }
-  } else if(num1 != undefined || num2 != undefined || num3 != undefined){
-    if(num1 != undefined){
+  } else if(num1 !== undefined || num2 !== undefined || num3 !== undefined){
+    if(num1 !== undefined){
       return num1;
-    } else if(num2 != undefined){
+    } else if(num2 !== undefined){
       return num2;
-    } else if(num3 != undefined){
+    } else if(num3 !== undefined){
       return num3;
     }
   }
