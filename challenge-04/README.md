@@ -9,7 +9,7 @@ para o contrário.
 */
 var isTruthy = function(param){
 return param ? true : false;
-}
+};
 
 // Invoque a função criada acima, passando todos os tipos de valores `falsy`.
 isTruthy(false);
