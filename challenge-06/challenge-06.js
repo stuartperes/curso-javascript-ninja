@@ -5,7 +5,8 @@ Declare uma variável chamada `championship` que receberá o nome do campeonato,
 e imprima o nome desse campeonato no console.
 */
 // ?
-
+var championship = "Campeonato Paulista";
+console.log(championship);
 /*
 Declare uma variável chamada `teams`, que receberá um array com 5 elementos.
 Os elementos serão nomes de times do campeonato escolhido, e os nomes devem
@@ -13,7 +14,7 @@ estar na ordem em que eles aparecem na tabela no momento da solução desse
 desafio.
 */
 // ?
-
+var teams = [ "Palmeiras", "Corinthians", "São Paulo", "Santos", "Ponte Preta" ];
 console.log( 'Times que estão participando do campeonato:', teams );
 
 /*
@@ -33,19 +34,46 @@ Crie uma função chamada `showTeamPosition` com as seguintes características:
     "Não temos a informação do time que está nessa posição."
 */
 // ?
-
+function showTeamPosition(posicaoTime){
+    switch(posicaoTime){
+        case 1:
+            console.log("O time que está em " + posicaoTime + "º lugar é o " + teams[--posicaoTime]);
+            break;
+        case 2:
+            console.log("O time que está em " + posicaoTime + "º lugar é o " + teams[--posicaoTime]);
+            break;
+        case 3:
+            console.log("O time que está em " + posicaoTime + "º lugar é o " + teams[--posicaoTime]);
+            break;
+        case 4:
+        	console.log("O time que está em " + posicaoTime + "º lugar é o " + teams[--posicaoTime]);
+            break;
+        case 5:
+        	console.log("O time que está em " + posicaoTime + "º lugar é o " + teams[--posicaoTime]);
+            break;
+        default:
+        	console.log("Não temos a informação do time que está nessa posição.");
+    }
+}
 /*
 Escolha 4 times do campeonato selecionado e mostre a posição dele, usando a
 função acima. Entre esses 4, adicione 1 que não esteja entre os 5 primeiros.
 */
 // ?
-
+showTeamPosition(1); //O time que está em 1º lugar é o Palmeiras
+showTeamPosition(4); //O time que está em 4º lugar é o Santos
+showTeamPosition(3); //O time que está em 3º lugar é o São Paulo
+showTeamPosition(10); //Não temos a informação do time que está nessa posição.
 /*
 Mostre os números de 20 a 30 no console (inclusive o 30), usando a estrutura de
 repetição "while".
 */
 // ?
-
+var contador = 20;
+while(contador<=30){
+    console.log(contador);
+    contador++;
+}
 /*
 Crie uma função chamada `convertToHex`, com as seguintes características:
     - A função recebe uma cor por parâmetro, do tipo string. Exemplo: "red";
