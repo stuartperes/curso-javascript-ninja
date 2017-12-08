@@ -55,8 +55,7 @@ vai efetuar. Será uma string com os valores `+`, `-`, `*`, `/` ou `%`;
 // ?
 function calculator(operator){
     return function(num1, num2){
-        if(operator === '+' || operator === '-' || operator === '*' || operator === '/' || operator === '%'){
-        	var result = 0;
+        var result = 0;
             switch(operator){
                 case '+':
                     result = num1 + num2;
@@ -72,10 +71,11 @@ function calculator(operator){
                 	break;
                 case '%':
                 	result = num1 % num2;
+                  break;
+              default:
+                  return "Operação inválida";
             }
            	return "Resultado da operação: " + num1 + " " + operator + " " + num2 + " = " + result + "."
-        }else{
-        	return "Operação inválida."
         }
     };
 }
